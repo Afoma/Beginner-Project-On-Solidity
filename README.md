@@ -1,2 +1,2 @@
-# Hotel-Room-Booking-Smart-Contract
+# Beginner-Project-On-Solidity
 Beginner project on Solidity
