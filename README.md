@@ -15,7 +15,7 @@ The `contract` contains all the players in a smart contract. The smart contract 
 ## `address` 
 First, the `address` is a state variable because it is declared in a contract but outside of a function just like we have global variables that are declared outside of a function.
 represents the owner's address to whom payment is made on the blockchain. 
-The `address` is declared `address payable public owner`. We can save the owner's address like this by assigning or hardcoding it like this `address payable public owner = Ox...`.
+The `address` is declared `address payable public owner`. We can save the owner's address by assigning or hardcoding it like this `address payable public owner = Ox...`.
 However, it's best to make it dynamic, so it is initialised by creating a constructor function.
 ## constructor function
 A few things to know about a constructor function (according to chat gpt):
@@ -24,7 +24,7 @@ A few things to know about a constructor function (according to chat gpt):
 - it does not have a return type, has the same name as the contract, and cannot be called explicitly like a regular function
 - the constructor can use modifiers to enforce conditions during deployment, ensuring that the contract is deployed in a secure and valid state
 ## enums
-`enum` is a data structure in Solidity that is used to represent a collection of options that will never change. To understand `enum` better, picture is as a sign that displays options for you to select from. Example a green button on which is inscribed "to be" and a red button on which is inscribed "not to be". `enum` is perfect for keeping track of statuses or states. Hotel room occupancy are perfect examples to demonstrate how `enum` works because they are either "vacant" or "occupied".
+`enum` is a data structure in Solidity that represents a collection of options that will never change. To understand `enum` better, picture it as a sign that displays options for you to select from. For example, a green button on which is inscribed "to be" and a red button on which is inscribed "not to be". `enum` is perfect for keeping track of statuses or states. Hotel room occupancy is a perfect example to demonstrate how `enum` works because they are either "vacant" or "occupied".
 ## function
-Understand a function as a robot or a button which is made of so many commands which executes its role(s) when it is called or pressed.
+Understand a function as a robot or a button which is made of so many commands which execute its role(s) when it is called or pressed. 
 
