@@ -2,6 +2,8 @@
 
 Note that Solidity is primarily designed for writing smart contracts on the Ethereum blockchain and, hence, does not handle transactions of other cryptocurrencies directly.
 
+This particular README is talking about `HotelRoom.sol`
+
 In the first line, the comment `// SPDX-License-Identifier: MIT` indicates the license under which the code is distributed, which is MIT. 
 The second line specifies the compiler version that should be used to compile the smart contract.
 These two lines above are compulsory for the smart contract to compile.
