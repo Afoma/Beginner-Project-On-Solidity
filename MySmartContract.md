@@ -55,3 +55,25 @@ This is the new contract that is created in the child contract.
 This is passed as an argument since the parent contract's constructor has it as an argument.
 
 Now that we have created the new smart contract within our smart contract, we will create a new SecretVault address for reuse. We create it in MySmartContract. 
+
+`address` is usually stored in the child contract. 
+
+`function getSecret()` will change from 
+
+![image](https://github.com/Afoma/Beginner-Project-On-Solidity/assets/48632890/41784cb7-9791-457e-bec3-26d6e7476c38)
+
+to this
+
+![image](https://github.com/Afoma/Beginner-Project-On-Solidity/assets/48632890/dbc40400-7387-4af5-98a6-21a5d9cad88e)
+
+this will call the `getSecret()` function of the `SecretVault` contract and return its result.
+
+Deploying this contract below threw errors
+
+![image](https://github.com/Afoma/Beginner-Project-On-Solidity/assets/48632890/6d9230bb-6673-43fe-b5da-d1b6f6618a68)
+
+To fix the error, you can remove the declaration of the local variable `_secretVault` and directly assign the address of the new `SecretVault` contract to the `secretVault` state variable. 
+
+![image](https://github.com/Afoma/Beginner-Project-On-Solidity/assets/48632890/2352e56c-ec58-4a05-843c-00cebf9c7710)
+
+In the updated code, we instantiate the "SecretVault" contract and assign it to the "secretVault" state variable directly without using a local variable.
