@@ -50,5 +50,3 @@ contract HotelRoom{
     //Visibility
     //Events
     //Enums
-
-}
